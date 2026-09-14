@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa11f6d-5f59-435a-95f5-1357b52cdb0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/ann1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ann2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ann4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ann5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/backg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/backg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/backg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/backg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/chasebank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/horizon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/lead1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/multichoice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/technobrain.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3JDekCtzDk6lC8mOYRDYCsJK6ca" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,6 +43,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -36,6 +53,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\PythonProject\Annpeace\src\images" />
+      <recent name="C:\Users\user\PycharmProjects\PythonProject\Annpeace\src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,7 +75,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1789200207042</updated>
-      <workItem from="1789200208096" duration="4794000" />
+      <workItem from="1789200208096" duration="13801000" />
+      <workItem from="1789312067596" duration="2726000" />
     </task>
     <servers />
   </component>

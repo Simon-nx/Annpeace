@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annepeace Alwala, OGW — Vice President, Global Service Delivery, Sama</title>
+<meta name="description" content="Annepeace Alwala, OGW is the Vice President of Global Service Delivery at Sama, leading ethical AI operations across East Africa.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (Play CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: "#0B0F1A",
+          "ink-soft": "#141B2E",
+          paper: "#F5F4EF",
+          "paper-dim": "#EAE7DE",
+          gold: "#C9A24B",
+          "gold-bright": "#E4C077",
+          emerald: "#1F6F5C",
+          "emerald-bright": "#2E9C82",
+        },
+        fontFamily: {
+          display: ["Fraunces", "Georgia", "serif"],
+          body: ["Manrope", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- AOS: fade/slide elements in as you scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<!-- Our own small stylesheet, for what Tailwind classes can't do -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body bg-paper text-[#14161C]">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <!-- ============ UTILITY BAR (large screens only) ============ -->
+  <div class="hidden lg:block border-b border-white/5 bg-ink/95 text-paper/40">
+    <div class="mx-auto flex h-7 max-w-6xl items-center justify-between px-6 text-[11px] tracking-wide">
+      <span class="font-display">AA</span>
+      <span id="utilityClock"></span>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR — liquid glass, sticky ============ -->
+  <div id="site-header" class="glass-pill-dark sticky top-0 z-50 border-b border-white/10 transition-[background-color,backdrop-filter] duration-300">
+    <div class="mx-auto max-w-6xl flex items-center justify-between px-6 py-3">
+
+      <a href="index.html" class="flex items-center gap-2.5 text-paper">
+        <span class="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-gold-bright to-gold font-display text-sm font-semibold text-ink">AA</span>
+        <span class="text-sm font-semibold">Annepeace Alwala</span>
+      </a>
+
+      <nav class="hidden md:block" aria-label="Primary">
+        <ul class="flex gap-7">
+          <li><a href="index.html" class="nav-link nav-link-active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+          <li><a href="awards.html" class="nav-link">Awards</a></li>
+          <li><a href="impact.html" class="nav-link">Impact</a></li>
+          <li><a href="media.html" class="nav-link">Media</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="navToggle" class="md:hidden text-paper" aria-expanded="false" aria-controls="mobileNav">
+        <i data-lucide="menu" id="menuIcon"></i>
+        <i data-lucide="x" id="closeIcon" class="hidden"></i>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+
+    <nav id="mobileNav" class="glass-pill-dark hidden md:hidden border-t border-white/10 px-6 py-4" aria-label="Primary">
+      <ul class="flex flex-col gap-1">
+        <li><a href="index.html" class="nav-link nav-link-active block py-2">Home</a></li>
+        <li><a href="about.html" class="nav-link block py-2">About</a></li>
+        <li><a href="leadership.html" class="nav-link block py-2">Leadership</a></li>
+        <li><a href="awards.html" class="nav-link block py-2">Awards</a></li>
+        <li><a href="impact.html" class="nav-link block py-2">Impact</a></li>
+        <li><a href="media.html" class="nav-link block py-2">Media</a></li>
+        <li><a href="contact.html" class="nav-link block py-2">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO — solid background color, no image ============ -->
+  <section class="relative min-h-[92vh] flex items-center overflow-hidden bg-[#c1bcb6]">
+
+    <div class="relative z-10 mx-auto w-full max-w-6xl grid gap-10 px-6 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+
+      <!-- Portrait — ann1.jpeg, scales up to be full/dominant on larger screens -->
+      <div
+        data-aos="fade-right"
+        class="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[28px] border border-ink/10 shadow-2xl bg-ink-soft lg:mx-0 lg:aspect-auto lg:h-[74vh] lg:max-w-none lg:w-full"
+      >
+        <img
+          src="src/images/ann1.jpeg"
+          alt="Portrait of Annepeace Alwala"
+          class="h-full w-full object-cover"
+          fetchpriority="high"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="hidden absolute inset-0 items-center justify-center font-display text-4xl text-gold">AA</div>
+      </div>
+
+      <!-- Name and intro — right side, vertically centered relative to the portrait -->
+      <div data-aos="fade-left">
+        <p class="mb-4 text-sm font-semibold text-blue-800">Vice President, Global Service Delivery — Sama</p>
+        <h1 class="mb-6 font-display text-4xl md:text-6xl font-medium leading-[1.02] tracking-tight text-ink">
+          Annepeace Alwala<span class="align-super text-[0.4em] font-medium text-emerald-800">, OGW</span>
+        </h1>
+        <div class="flex flex-wrap gap-3.5">
+          <a href="about.html" class="rounded-full bg-gradient-to-br from-gold-bright to-gold px-6 py-3.5 text-sm font-semibold text-ink shadow-lg shadow-gold/30 transition-transform hover:-translate-y-0.5">Read her story</a>
+          <a href="contact.html" class="rounded-full border border-ink/15 bg-white/70 px-6 py-3.5 text-sm font-semibold text-ink backdrop-blur-md transition-colors hover:bg-white/90">Book a speaking engagement</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STAT STRIP ============ -->
+  <section class="relative z-20 -mt-14 px-6" aria-label="Career highlights">
+    <div class="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="glass-card rounded-2xl p-7" data-aos="fade-up">
+        <p class="mb-1.5 font-display text-3xl text-ink">15+</p>
+        <p class="text-sm leading-snug text-gray-500">Years in customer experience and service operations leadership</p>
+      </div>
+      <div class="glass-card rounded-2xl p-7" data-aos="fade-up" data-aos-delay="100">
+        <p class="mb-1.5 font-display text-3xl text-ink">3</p>
+        <p class="text-sm leading-snug text-gray-500">Countries where she has led operations — Kenya, Uganda, and South Africa</p>
+      </div>
+      <div class="glass-card rounded-2xl p-7" data-aos="fade-up" data-aos-delay="200">
+        <p class="mb-1.5 font-display text-3xl text-ink">OGW</p>
+        <p class="text-sm leading-snug text-gray-500">Conferred the Order of the Grand Warrior for national service</p>
+      </div>
+      <div class="glass-card rounded-2xl p-7" data-aos="fade-up" data-aos-delay="300">
+        <p class="mb-1.5 font-display text-3xl text-ink">11</p>
+        <p class="text-sm leading-snug text-gray-500">Roles across six organisations, from Nairobi to Johannesburg</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ANNEPEACE (narrative) — backg3.jpg now lives here ============ -->
+  <section class="relative overflow-hidden px-6 pt-32 pb-20">
+    <img src="src/images/backg3.jpg" alt="" loading="lazy" class="absolute inset-0 h-full w-full object-cover" onerror="this.style.opacity=0">
+
+    <div class="relative z-10 mx-auto max-w-5xl grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+      <div data-aos="fade-right" class="relative aspect-[4/5] overflow-hidden rounded-[28px] shadow-xl bg-ink-soft">
+        <img src="src/images/ann2.jpeg" alt="Annepeace Alwala" loading="lazy" class="h-full w-full object-cover" onerror="this.style.display='none'">
+      </div>
+
+      <div data-aos="fade-left" class="glass-card rounded-[28px] p-8 md:p-10">
+        <p class="mb-3 text-sm font-semibold text-emerald">About Annepeace</p>
+        <h2 class="mb-6 max-w-[20ch] font-display text-3xl md:text-4xl font-medium leading-tight">
+          From Githurai to the global stage, without losing her center of gravity
+        </h2>
+        <p class="text-[1.02rem] leading-relaxed text-gray-600">
+          Annepeace Alwala leads Global Service Delivery at Sama, the ethical AI company that
+          trains and validates data for some of the world's largest technology organisations. Her
+          career began in call-centre operations and customer experience before she stepped into
+          global operations leadership — always staying close to the people whose work she leads.
+        </p>
+        <a href="about.html" class="mt-6 inline-block font-semibold text-emerald hover:underline">Read her full story →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREER AT A GLANCE — vertical timeline, ends at Horizon ============ -->
+  <section class="relative overflow-hidden px-6 py-28">
+    <img src="src/images/lead1.jpg" alt="" loading="lazy" class="absolute inset-0 h-full w-full object-cover" onerror="this.style.opacity=0">
+
+    <div class="relative z-10 mx-auto max-w-4xl">
+      <p class="mb-3 text-sm font-semibold text-blue-800" data-aos="fade-up">Career at a glance</p>
+      <h2 class="mb-14 max-w-[24ch] font-display text-3xl md:text-4xl font-medium leading-tight text-emerald-900" data-aos="fade-up">
+        A path built on operations, people, and trust
+      </h2>
+
+      <ol class="flex flex-col">
+
+        <!-- 2022 — Present: Sama (highlighted) -->
+        <li class="flex gap-5 sm:gap-6" data-aos="fade-up">
+          <div class="flex flex-shrink-0 flex-col items-center">
+            <div class="year-circle year-circle-current">2022</div>
+            <div class="year-connector"></div>
+          </div>
+          <div class="timeline-card mb-8 flex-1">
+            <div class="mb-2 flex items-center gap-3">
+              <img src="src/images/sama.png" alt="Sama logo" class="h-8 w-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="hidden h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-[10px] font-bold text-emerald-800">SA</div>
+              <p class="text-sm font-semibold text-emerald-800">Sama · 2022–Present</p>
+            </div>
+            <p class="font-display text-lg font-medium text-ink">Vice President, Global Service Delivery</p>
+            <p class="mt-1 text-sm text-gray-500">Kenya</p>
+          </div>
+        </li>
+
+        <!-- 2018–2022: MultiChoice — merged into a single entry, two positions -->
+        <li class="flex gap-5 sm:gap-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="flex flex-shrink-0 flex-col items-center">
+            <div class="year-circle">2018</div>
+            <div class="year-connector"></div>
+          </div>
+          <div class="timeline-card mb-8 flex-1">
+            <div class="mb-2 flex items-center gap-3">
+              <img src="src/images/multichoice.png" alt="MultiChoice Group logo" class="h-8 w-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="hidden h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-800">MC</div>
+              <p class="text-sm font-semibold text-blue-800">MultiChoice Group · 2018–2022</p>
+            </div>
+            <p class="font-display text-lg font-medium text-ink">Head of Customer Experience and Care</p>
+            <p class="font-display text-lg font-medium text-ink">Head of Operations</p>
+            <p class="mt-1 text-sm text-gray-500">Kenya</p>
+          </div>
+        </li>
+
+        <!-- 2015–2018: Chase Bank -->
+        <li class="flex gap-5 sm:gap-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="flex flex-shrink-0 flex-col items-center">
+            <div class="year-circle">2015</div>
+            <div class="year-connector"></div>
+          </div>
+          <div class="timeline-card mb-8 flex-1">
+            <div class="mb-2 flex items-center gap-3">
+              <img src="src/images/chasebank.png" alt="Chase Bank Kenya logo" class="h-8 w-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="hidden h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-800">CB</div>
+              <p class="text-sm font-semibold text-blue-800">Chase Bank Kenya Ltd · 2015–2018</p>
+            </div>
+            <p class="font-display text-lg font-medium text-ink">Senior Manager, Customer Experience</p>
+            <p class="mt-1 text-sm text-gray-500">Kenya</p>
+          </div>
+        </li>
+
+        <!-- 2014–2015: Techno Brain -->
+        <li class="flex gap-5 sm:gap-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex flex-shrink-0 flex-col items-center">
+            <div class="year-circle">2014</div>
+            <div class="year-connector"></div>
+          </div>
+          <div class="timeline-card mb-8 flex-1">
+            <div class="mb-2 flex items-center gap-3">
+              <img src="src/images/technobrain.png" alt="Techno Brain BPO logo" class="h-8 w-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="hidden h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-800">TB</div>
+              <p class="text-sm font-semibold text-blue-800">Techno Brain BPO ITES Limited · 2014–2015</p>
+            </div>
+            <p class="font-display text-lg font-medium text-ink">Senior Operations Manager</p>
+            <p class="mt-1 text-sm text-gray-500">Kenya</p>
+          </div>
+        </li>
+
+        <!-- 2013–2014: Horizon Contact Centers (now the final entry — no connector) -->
+        <li class="flex gap-5 sm:gap-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="flex flex-shrink-0 flex-col items-center">
+            <div class="year-circle">2013</div>
+          </div>
+          <div class="timeline-card flex-1">
+            <div class="mb-2 flex items-center gap-3">
+              <img src="src/images/horizon.png" alt="Horizon Contact Centers logo" class="h-8 w-8 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="hidden h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-800">HZ</div>
+              <p class="text-sm font-semibold text-blue-800">Horizon Contact Centers Ltd · 2013–2014</p>
+            </div>
+            <p class="font-display text-lg font-medium text-ink">Service Delivery Manager</p>
+            <p class="mt-1 text-sm text-gray-500">Kenya</p>
+          </div>
+        </li>
+
+      </ol>
+
+      <p class="mt-10 mb-4 max-w-[48ch] text-sm leading-relaxed text-gray-600" data-aos="fade-up">
+        Her story continues well beyond this early chapter — explore her full leadership journey, honours, and impact on the pages below.
+      </p>
+
+      <div class="flex flex-wrap gap-x-8 gap-y-3" data-aos="fade-up">
+        <a href="about.html" class="font-semibold text-blue-800 hover:underline">About →</a>
+        <a href="leadership.html" class="font-semibold text-blue-800 hover:underline">Leadership →</a>
+        <a href="awards.html" class="font-semibold text-blue-800 hover:underline">Awards →</a>
+        <a href="impact.html" class="font-semibold text-blue-800 hover:underline">Impact →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE BANNER — light sky-blue background ============ -->
+  <section class="bg-sky-100 px-6 py-28 text-center" data-aos="fade-up">
+    <blockquote class="mx-auto max-w-2xl">
+      <p class="mb-6 font-display text-4xl md:text-6xl font-medium gradient-text">You are enough.</p>
+      <cite class="text-sm not-italic text-ink/60">Annepeace Alwala, OGW</cite>
+    </blockquote>
+  </section>
+
+  <!-- ============ CTA (raw image background, no overlay) ============ -->
+  <section class="relative overflow-hidden px-6 py-24 text-center">
+    <img src="src/images/back3.jpg" alt="" loading="lazy" class="absolute inset-0 h-full w-full object-cover" onerror="this.style.opacity=0">
+
+    <div class="relative z-10 mx-auto max-w-xl">
+      <h2 class="mb-3 font-display text-2xl md:text-3xl font-medium text-blue-900">Invite Annepeace to your next conversation</h2>
+      <p class="mb-8 font-semibold text-emerald-800">Speaking engagements, media features, and partnership enquiries.</p>
+      <a href="contact.html" class="inline-block rounded-full bg-gradient-to-br from-gold-bright to-gold px-6 py-3.5 text-sm font-semibold text-ink shadow-lg shadow-gold/30 transition-transform hover:-translate-y-0.5">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER — lighter background ============ -->
+<footer class="bg-paper-dim px-6 py-14 text-ink/65">
+  <div class="mx-auto max-w-6xl grid gap-10 md:grid-cols-[1.2fr_2fr]">
+    <div class="flex gap-3">
+      <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-bright to-gold font-display text-sm font-semibold text-ink">AA</span>
+      <p class="text-sm leading-relaxed">Annepeace Alwala, OGW<br>Vice President, Global Service Delivery, Sama</p>
+    </div>
+
+    <nav class="flex flex-wrap gap-x-7 gap-y-3" aria-label="Footer">
+      <a href="index.html" class="text-sm hover:text-ink transition-colors">Home</a>
+      <a href="about.html" class="text-sm hover:text-ink transition-colors">About</a>
+      <a href="leadership.html" class="text-sm hover:text-ink transition-colors">Leadership</a>
+      <a href="awards.html" class="text-sm hover:text-ink transition-colors">Awards</a>
+      <a href="impact.html" class="text-sm hover:text-ink transition-colors">Impact</a>
+      <a href="media.html" class="text-sm hover:text-ink transition-colors">Media</a>
+      <a href="contact.html" class="text-sm hover:text-ink transition-colors">Contact</a>
+    </nav>
+
+    <p class="md:col-span-2 border-t border-ink/10 pt-6 text-xs">&copy; <span id="year"></span> Annepeace Alwala. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

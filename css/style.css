@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Almost everything is styled with Tailwind utility classes directly in
+   index.html. This file only holds what plain utility classes can't do:
+   the liquid-glass nav, the frosted stat cards, the timeline cards, and
+   the gradient text.
+   ========================================================================== */
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 200;
+  background: #e4c077;
+  color: #0b0f1a;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 10px 0;
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Liquid-glass nav pills — frosted but elegant, not glossy */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+.glass-pill-active {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Dark frosted-glass panel used for the sticky navbar */
+.glass-pill-dark {
+  background: rgba(11, 15, 26, 0.55);
+  border-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+}
+.glass-pill-dark.is-scrolled {
+  background: rgba(11, 15, 26, 0.78);
+}
+
+/* Frosted stat cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: 0 20px 40px -28px rgba(11, 15, 26, 0.35);
+}
+
+/* Career timeline — liquid glass instead of solid white */
+.timeline-card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 16px 32px -24px rgba(11, 15, 26, 0.3);
+}
+
+.year-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #0b0f1a;
+}
+.year-circle-current {
+  background: rgba(46, 156, 130, 0.22);
+  border: 1px solid rgba(46, 156, 130, 0.5);
+  color: #1f6f5c;
+}
+.year-connector {
+  width: 2px;
+  flex: 1;
+  min-height: 1.5rem;
+  margin-top: 4px;
+  background: linear-gradient(to bottom, rgba(11, 15, 26, 0.25), transparent);
+}
+
+/* Gold-to-emerald gradient text for the "You are enough." quote */
+.gradient-text {
+  background: linear-gradient(120deg, #e4c077, #2e9c82);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Swiper: hide default nav arrows/dots to keep the gallery minimal */
+.momentsSwiper .swiper-button-next,
+.momentsSwiper .swiper-button-prev,
+.momentsSwiper .swiper-pagination {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
